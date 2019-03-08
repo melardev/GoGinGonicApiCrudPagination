@@ -25,10 +25,10 @@ func CreatePageMeta(request *http.Request, loadedItemsCount, page, page_size, to
 	page_meta["total_items_count"] = totalItemsCount
 
 	page_meta["prev_page_number"] = 1
-	total_pages_count := int(math.Ceil(float64(totalItemsCount) / float64(page_size)))
-	page_meta["total_pages_count"] = total_pages_count
+	numberOfPages := int(math.Ceil(float64(totalItemsCount) / float64(page_size)))
+	page_meta["number_of_pages"] = numberOfPages
 
-	if page < total_pages_count {
+	if page < numberOfPages {
 		page_meta["has_next_page"] = true
 		page_meta["next_page_number"] = page + 1
 	} else {
@@ -37,6 +37,7 @@ func CreatePageMeta(request *http.Request, loadedItemsCount, page, page_size, to
 	}
 	if page > 1 {
 		page_meta["prev_page_number"] = page - 1
+		page_meta["has_prev_page"] = true
 	} else {
 		page_meta["has_prev_page"] = false
 		page_meta["prev_page_number"] = 1

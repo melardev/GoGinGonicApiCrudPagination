@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
@@ -25,10 +26,11 @@ func main() {
 
 	database := infrastructure.OpenDbConnection()
 	defer database.Close()
-	migrate(database);
+	migrate(database)
 	seeds.Seed(database)
 
 	goGonicEngine := gin.Default()
+	goGonicEngine.Use(cors.Default())
 	goGonicEngine.GET("/api/todos", controllers.GetAllTodos).
 		// GET("/api/todos/completed", controllers.GetAllPendingTodos).
 		// GET("/api/todos/pending", controllers.GetAllCompletedTodos).
