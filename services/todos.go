@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/melardev/GoGinGonicApiCrudPagination/infrastructure"
-	"github.com/melardev/GoGinGonicApiCrudPagination/models"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/infrastructure"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/models"
 )
 
 func FetchTodos(page, pageSize int) ([]models.Todo, int) {

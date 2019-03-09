@@ -3,7 +3,7 @@ package dtos
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/melardev/GoGinGonicApiCrudPagination/models"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/models"
 	"gopkg.in/go-playground/validator.v8"
 	"math"
 	"net/http"

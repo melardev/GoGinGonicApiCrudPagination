@@ -6,10 +6,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"github.com/joho/godotenv"
-	"github.com/melardev/GoGinGonicApiCrudPagination/controllers"
-	"github.com/melardev/GoGinGonicApiCrudPagination/infrastructure"
-	"github.com/melardev/GoGinGonicApiCrudPagination/models"
-	"github.com/melardev/GoGinGonicApiCrudPagination/seeds"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/controllers"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/infrastructure"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/models"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/seeds"
 	"os"
 )
 

@@ -2,7 +2,7 @@ package dtos
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/melardev/GoGinGonicApiCrudPagination/models"
+	"github.com/melardev/GoGinGonicApiGormCrudPagination/models"
 	"net/http"
 )
 
