@@ -8,7 +8,7 @@ import (
 
 type CreateTodo struct {
 	Title       string `form:"title" json:"title" xml:"title"  binding:"required"`
-	Description string `form:"description" json:"description" xml:"description"  binding:"required"`
+	Description string `form:"description" json:"description" xml:"description"`
 	Completed   bool   `form:"completed" json:"completed" xml:"completed"`
 }
 
