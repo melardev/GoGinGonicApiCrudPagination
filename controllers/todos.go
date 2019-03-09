@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/melardev/gogonic_gorm_api_crud/dtos"
-	"github.com/melardev/gogonic_gorm_api_crud/services"
+	"github.com/melardev/GoGinGonicApiCrudPagination/dtos"
+	"github.com/melardev/GoGinGonicApiCrudPagination/services"
 	"net/http"
 	"strconv"
 )

@@ -3,7 +3,7 @@ package seeds
 import (
 	"github.com/icrowley/fake"
 	"github.com/jinzhu/gorm"
-	"github.com/melardev/gogonic_gorm_api_crud/models"
+	"github.com/melardev/GoGinGonicApiCrudPagination/models"
 	"math/rand"
 	"time"
 )
